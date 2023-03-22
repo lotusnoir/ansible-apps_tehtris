@@ -1,0 +1,21 @@
+[server]
+# you can manually set a RFL IP here but it should work automatically using the salut protocol if no SERVER is specified
+# Examples:
+# SERVER=IP
+# SERVER=HOSTNAME:PORT
+# SERVER=IP:PORT
+# SERVER=HOSTNAME1:PORT1,HOSTNAME2:PORT2
+SERVER={{ tehtris_server }}
+
+# You can specify a SOCKS5 or HTTP(S) server with the following syntax. If no PROXY= is specified, it will attempt to connect directly
+# PROXY = http://proxy.local:3128
+# PROXY = socks5://proxy.local:1080
+PROXY=
+
+[client]
+TAG={{ tehtris_tag }}
+VDI=
+REMOTE_EXECUTION=
+# if set to 1 log debug informations in a txt file
+[debug]
+DEBUG_MODE=0
