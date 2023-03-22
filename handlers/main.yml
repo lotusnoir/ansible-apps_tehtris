@@ -2,5 +2,6 @@
 - name: reload tehtris
   ansible.builtin.systemd:
     name: "{{ tehtris_service_name }}"
+    state: restarted
     daemon_reload: true
   become: true
