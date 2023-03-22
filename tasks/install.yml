@@ -40,7 +40,7 @@
         url: '{{ tehtris_install_url }}'
         dest: "{{ tehtris_tmp_path }}"
         timeout: '60'
-        mode: '0644'
+        mode: '0755'
       register: dl
       when:
         - tehtris_install_method == "url"
