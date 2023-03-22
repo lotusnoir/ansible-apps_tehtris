@@ -38,7 +38,7 @@
     - name: "Download package from url"
       ansible.builtin.get_url:
         url: '{{ tehtris_install_url }}'
-        dest: "{{ tehtris_temp_path }}"
+        dest: "{{ tehtris_tmp_path }}"
         timeout: '60'
         mode: '0644'
       register: dl

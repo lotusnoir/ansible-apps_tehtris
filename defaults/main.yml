@@ -5,6 +5,7 @@ tehtris_force_install: false
 tehtris_install_method: url # or file
 tehtris_install_path: ""
 tehtris_install_url: ""
+tehtris_tmp_path: "/tmp"
 tehtris_user: root
 tehtris_group: root
 
