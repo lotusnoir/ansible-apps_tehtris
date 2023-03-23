@@ -49,7 +49,6 @@
 
     - name: "Install tehtris"
       ansible.builtin.command: "/bin/bash {{ tehtris_tmp_path }}/{{ tehtris_binary_file }} {{ tehtris_installer_options }}"
-      #changed_when: false
       when: dl.changed
 
     - name: "Remove binary file"
