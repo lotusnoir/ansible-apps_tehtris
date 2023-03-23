@@ -4,3 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 0.1.0 - 2023-03-23
+
+### Commits
+
+- minor changes [`0ab6f24`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/0ab6f24490d267b98429051acf833a8ecfe19669)
+- minor changes [`1fec977`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/1fec977ce0d1b5cee3c23215e7ebb52b11f008bd)
+- include secret detection [`c6a93d5`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/c6a93d59cd9d56a8d9ab59215780c96e9c40a040)
+- clean repo [`978f60c`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/978f60c289261d9251e73fa60236066ca662ab8e)
+- clean repo [`17604d0`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/17604d0cc549f91d4c50bb99fb855e7714fa9304)
+- chmod install package [`c3c8245`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/c3c82458501cc9f0ca13e15258a2b6c20e821245)
+- add and fix vars [`6d97f58`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/6d97f58bb03651fe7470eb2b03e86f14c42fa58f)
+- add url support [`e5cdcc8`](https://github.com/lotusnoir/ansible-apps_tehtris/commit/e5cdcc8571f800b44a47674eeb0e28727d333c79)
