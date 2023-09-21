@@ -55,10 +55,6 @@
       ansible.builtin.file:
         path: "{{ tehtris_tmp_path }}/{{ tehtris_binary_file }}"
         state: absent
-      when:
-        - tehtris_install_method == "file"
-        - tehtris_install_path is defined
-        - tehtris_install_path | length > 0
 
 - name: "Config tasks"
   when:
