@@ -11,4 +11,10 @@ tehtris_group: root
 
 #Config
 tehtris_server: "10.1.1.1"
-tehtris_tag: "xxxxxxxxxx"
+tehtris_proxy: ""
+
+tehtris_tag: ""
+tehtris_vdi: ""
+tehtris_remote_exec: ""
+
+tehtris_debug_mode: "0"
