@@ -29,7 +29,6 @@
         owner: "{{ tehtris_user }}"
         group: "{{ tehtris_group }}"
         mode: '0755'
-      register: dl
       when:
         - tehtris_install_method == "file"
         - tehtris_install_path is defined
