@@ -41,12 +41,21 @@
         dest: "{{ tehtris_tmp_path }}"
         timeout: '60'
         mode: '0755'
-      register: dl
       when:
         - tehtris_install_method == "url"
         - tehtris_install_url is defined
         - tehtris_install_url | length > 0
-      notify: Install tehtris
+
+    - name: "Check for tehtris install package"
+      ansible.builtin.stat:
+        path: '{{ tehtris_tmp_path }}/{{ tehtris_binary_file }}'
+      changed_when: false
+      register: tehtris_pkg
+
+    - name: "Install tehtris"
+      ansible.builtin.command: "/bin/bash {{ tehtris_tmp_path }}/{{ tehtris_binary_file }} {{ tehtris_installer_options }}"
+      changed_when: false
+      when: tehtris_pkg.stat.exists
 
     - name: "Remove binary file"
       ansible.builtin.file:
