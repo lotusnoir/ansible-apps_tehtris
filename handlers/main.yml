@@ -1,7 +1,11 @@
 ---
-- name: reload tehtris
+- name: Reload tehtris
   ansible.builtin.systemd:
     name: "{{ tehtris_service_name }}"
     state: restarted
     daemon_reload: true
   become: true
+
+- name: "Install tehtris"
+  ansible.builtin.command: "/bin/bash {{ tehtris_tmp_path }}/{{ tehtris_binary_file }} {{ tehtris_installer_options }}"
+  changed_when: false

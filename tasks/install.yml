@@ -46,10 +46,7 @@
         - tehtris_install_method == "url"
         - tehtris_install_url is defined
         - tehtris_install_url | length > 0
-
-    - name: "Install tehtris"
-      ansible.builtin.command: "/bin/bash {{ tehtris_tmp_path }}/{{ tehtris_binary_file }} {{ tehtris_installer_options }}"
-      when: dl.changed
+      notify: Install tehtris
 
     - name: "Remove binary file"
       ansible.builtin.file:
@@ -70,7 +67,7 @@
         mode: 0644
       become: true
       notify:
-        - reload tehtris
+        - Reload tehtris
 
     - name: "Enable and Start tehtris service"
       ansible.builtin.service:
