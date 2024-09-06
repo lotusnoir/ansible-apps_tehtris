@@ -72,7 +72,7 @@
         dest: "{{ tehtris_config_path }}/config.ini"
         owner: "{{ tehtris_user }}"
         group: "{{ tehtris_group }}"
-        mode: 0644
+        mode: '0644'
       become: true
       notify:
         - Reload tehtris
