@@ -22,6 +22,7 @@
 ## Description
 
 Install and configure tehtris EDR
+
 ## Requirements
 
 none
@@ -45,7 +46,6 @@ As the package cannot be downloaded by a public link, you need to provide a path
           vars:
             tehtris_install_method: url # or file
             tehtris_install_url: "http://downloadpackage/xxxxxxxxx"
-
 
 
 ## License
